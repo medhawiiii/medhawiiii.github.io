@@ -1,0 +1,208 @@
+<!-- Stating we're using html-->
+<!DOCTYPE html> 
+<html lang="en">  
+    <head>              
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Boxicons Icons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Basic Icons -->
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+        <!-- Filled Icons -->
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+        <!-- Brand Icons -->
+        <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style-services-v.1.css">
+
+        <!-- Declaring the title of the web page-->
+        <title>Services</title>
+        <link rel="icon" type="image/x-icon" href="../Frontend/suabi-favicon.png">
+    </head>
+
+    <!-- What's going on in the body of the page-->
+    <body>
+        <div class="WRAPPER">
+            <nav class="NAV" id="navbar">
+                    <div class="NAV-LOGO" id="logo">
+                        <a href="homepage-v.1.html">
+                        <img src="../Frontend/Suabi trademark-transparent-cropped.png" alt="Company Trademark Logo"/>
+                        </a>
+                    </div>  
+                    <!-- Menu option for different pages-->
+                    <div class="NAV-MENU" id="NAVMENU">
+                        <ul>
+                            <li><a href="homepage-v.1.html" class="link">Home</a></li>
+                            <li><a href="services-v.1.html" class="link active">Services</a></li>
+                            <li><a href="about-us-v.1.html" class="link">About Us</a></li>
+                            <li><a href="contact-us-v.1.html" class="link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Creating button hamburger menu button -->
+                    <div class="NAV-MENU-BUTTON" id="menuButton" onclick="menuFunction()"> 
+                        <div class="menuBar1"></div>
+                        <div class="menuBar2"></div>
+                        <div class="menuBar3"></div>
+                    </div>                
+            </nav>
+        </div>
+
+        <!-- Main content of the page -->
+
+        <!-- Services Page Hero -->
+
+        <div class="SERVICES-HERO-IMAGE"> 
+                <div class="SERVICES-HERO-TEXT">
+                    <h1>Services</h1>
+                </div>
+        </div>
+
+        <div class="SERVICES-CONTAINER">
+            <!-- Services Section -->
+            <section class="SERVICES-SEC">
+            <!-- Services Intro -->
+                <p class="SERVICES-INTRO"> Here at Suabi, we pride ourselves on providing exceptional service
+                                    and qualative work. Our team of experts is dedicated to ensuring 
+                                    your satisfaction and delivering results that exceed expectations.
+                </p>
+                <h3 class="SERVICES-CONTENT">What We Can Do For You</h3>
+
+                    <!-- What we do for our clients -->
+                    <div class="SERVICES-CONTENT-GRID">
+                        <div class="SERVICES-ROW">
+                            <div class="SERVICES-COLUMN">
+                                <div class="SERVICES-CONTENT-CARD">
+                                <img src="../Frontend/SUABI-bookkeeping-card-3x2.jpg" alt="Bookkeeping" width="100%" class="SERVICES-CONTENT-IMAGE">
+                                    <h4>Bookkeping</h4>
+                                        <p class="SERVICES-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                            <div class="SERVICES-COLUMN">
+                                <div class="SERVICES-CONTENT-CARD">
+                                    <img src="../Frontend/SUABI-accounting-card-3x2.jpg" alt="Accounting" width="100%" class="SERVICES-CONTENT-IMAGE">
+                                    <h4>Accounting</h4>
+                                    <p class="SERVICES-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                            <div class="SERVICES-COLUMN">
+                                <div class="SERVICES-CONTENT-CARD">
+                                <img src="../Frontend/SUABI-consulting-card-3x2.jpg" alt="Consulting" width="100%" class="SERVICES-CONTENT-IMAGE">
+                                    <h4>Consulting</h4>
+                                    <p class="SERVICES-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                            <div class="SERVICES-COLUMN">
+                                <div class="SERVICES-CONTENT-CARD">
+                                <i class="bx bx-shape-diamond FEATURE-ICON"></i>
+                                    <h4>Service Four</h4>
+                                    <p class="SERVICES-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div> 
+
+       <!-- <div class="WHY-TRUST-CONTAINER">
+         Why Trust Us Section Content 
+            <section class="WHY-TRUST-SEC">
+         Why Trust Us Intro 
+                <p class="WHY-TRUST-INTRO"> Your success is our priority.
+                </p>
+                <h3 class="WHY-TRUST-CONTENT">Why Choose Us?</h3>
+
+                 Why our clients can trust us 
+                    <div class="WHY-TRUST-CONTENT-GRID">
+                            <div class="WHY-TRUST-ROW">
+                                <div class="WHY-TRUST-COLUMN">
+                                    <div class="WHY-TRUST-CONTENT-CARD">
+                                    <i class="bx bx-medal-star"></i> 
+                                            <h4>Credited</h4>
+                                            <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                    </div>
+                                </div>
+                            <div class="WHY-TRUST-COLUMN">
+                                <div class="WHY-TRUST-CONTENT-CARD">
+                                <i class="bx bx-check-shield"></i>
+                                    <h4>Certified</h4>
+                                        <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                            <div class="WHY-TRUST-COLUMN">
+                                <div class="WHY-TRUST-CONTENT-CARD">
+                                <i class="bx bx-heart FEATURE-ICON"></i>
+                                    <h4>Dedicated</h4>
+                                        <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                            <div class="WHY-TRUST-COLUMN">
+                                <div class="WHY-TRUST-CONTENT-CARD">
+                                    <i class="bx bx-enterprise"></i>
+                                        <h4>Focused</h4>
+                                            <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div> -->
+
+
+        <!-- Footer -->
+        <footer class="FOOT" >
+            <div class="FOOT-LOGO">
+                <img src="../Frontend/Suabi trademark-transparent-cropped.png" alt="Company Trademark Logo"/>
+            </div>
+            <address class="FOOT-BUSINESS-INFO">
+                <span class="bold">Email us at:</span><a href="mailto:example@example.com" class="suabiEmail"> example@example.com</a><br>
+                <span class="bold">Call us at:</span> <a href="tel:+1234567890" class="suabiPhone"> (123) 456-7890 </a><br>
+                <span class="bold">Visit us at:</span> 185 Main Street, Anytown, USA 12345<br>
+            </address>
+            <p>Follow us on social media!</p>
+            <div class="FOOT-SOCIAL">
+                <a href="https://www.facebook.com/people/Suabiccc-LLC/61589513567706/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/ananta-bista-8b4021183" class="fa fa-linkedin" target="_blank"></a>
+                <a href="#" class="fa fa-instagram" target="_blank"></a>
+            </div>
+            <p>&copy; 2026 Suabiccc, LLC. All rights reserved.</p>
+        </footer>
+        
+    <!-- Javascript -->
+     
+        <!-- Making menu functional and responsive (using javascript) -->
+        <script>
+            // Toggle the responsive class on the navigation menu
+            function menuFunction(navMenu, menuButton){
+                var navMenu = document.getElementById("NAVMENU");
+                var menuButton = document.getElementById("menuButton");
+
+                // Toggle the responsive class on the navigation menu
+                if(navMenu.className === "NAV-MENU"){
+                        navMenu.className += " responsive";
+                }else{
+                        navMenu.className = "NAV-MENU";
+                }
+                // Toggle the change class on the menu button to animate menu bars
+                menuButton.classList.toggle("change");
+            }
+
+            // When the user scrolls down 40px from the top of the document, hide the navbar
+            window.addEventListener('scroll', function() {
+                var navbar = document.getElementById("navbar");
+                var menuButton = document.getElementById("menuButton");
+
+                if(window.scrollY > 40){
+                    navbar.classList.add("scrolled");
+                    menuButton.classList.add("scrolled");
+                }else{
+                    navbar.classList.remove("scrolled");
+                    menuButton.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+    </body>
+</html>

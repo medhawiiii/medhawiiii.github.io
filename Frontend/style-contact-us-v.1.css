@@ -1,0 +1,577 @@
+/* our fonts for the page, we're using the Poppins family font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Adding background for page body*/
+body{
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    background: white;
+    background-size: contain;
+    background-repeat: repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 100px;
+}
+
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    color: #1d2f75;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/* holds all visuals items on page */
+.WRAPPER{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/*------------------------------ */
+/*------- NAVBAR SECTION ------- */
+/*------------------------------ */
+
+/* Global navigation bar */
+.NAV{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(70, 77, 53, 0.177), #7e91da);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+/*For trademark position*/
+.NAV-LOGO{
+    display: flex;
+    align-items: center;
+    padding-right: 500px;
+    /* padding-top: 20px; */
+}
+/*For sizing and hovering*/
+.NAV-LOGO img{
+    padding: 20px;
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: .3s;
+}
+.NAV-LOGO img:hover{
+    opacity: 0.8;
+}
+/* For menu position*/
+.NAV-MENU{
+    top: 100px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+/* For pages menu */
+.NAV-MENU ul{
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap;
+   align-items: center;
+   padding: 50px 0;
+   list-style-type: none;
+}
+.NAV-MENU ul li {
+    display: block;
+}
+/* For color of pages in menu */
+.NAV-MENU ul li .link{
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #1d2f75;
+    padding: 15px;
+    margin: 0 25px;
+    align-items: center;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+/* When link hovered over with mouse, underlined to let know engaged */
+.link:hover, .active{
+    border-bottom: 4px solid #99b2fd ;
+}
+
+
+/*------------------------------ */
+/*---- MENU BUTTON  SECTION ---- */
+/*------------------------------ */
+
+/* Hamburger menu button */
+.NAV-MENU-BUTTON{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #25335d;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-top: 26px;
+    margin-right: 12px;
+    z-index: 1001;
+    transition: all 0.3s ease-in-out;
+    position: center;
+}
+.NAV-MENU-BUTTON:hover{
+    background-color: #7185d8;
+}
+/* Hamburger menu bars */
+.NAV-MENU-BUTTON .menuBar1, .menuBar2, .menuBar3{
+    width: 26px;
+    height: 4px;
+    background: #7185d8;
+    margin: 2px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+.NAV-MENU-BUTTON:hover .menuBar1, .NAV-MENU-BUTTON:hover .menuBar2, 
+.NAV-MENU-BUTTON:hover .menuBar3{
+    background-color: #25335d;
+}
+/* Hamburger menu animation */
+.change .menuBar1{
+    transform: translate(-8px, 8px) rotate(-50deg);
+    background: #7e91da;
+    margin-left: 16px;
+    width: 28px;
+    height: 5px;
+}
+.change .menuBar2{
+    opacity: 0;
+}
+.change .menuBar3{
+    transform: translate(-8px, -8px) rotate(49deg);
+    background: #7e91da;
+    margin-left: 16px;
+    width: 28px;
+    height: 5px;
+}
+
+
+/*------------------------------- */
+/*--- SCROLLED NAVBAR SECTION --- */
+/*------------------------------- */
+
+/* Scrolled class for navbar */
+.NAV.scrolled{
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(white, #c9d3f9);
+}
+.NAV.scrolled .NAV-MENU ul li .link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #252525;
+    padding: 8px;
+}
+.NAV.scrolled .NAV-LOGO{
+    padding-top: 20px;
+}
+/* Scrolled class for navbar logo */
+.NAV.scrolled .NAV-LOGO img{
+    height: 80px;
+    padding: 20px;
+}
+
+
+/*---------------------------- */
+/*---- CONTACT US SECTION ---- */
+/*---------------------------- */
+
+/* Contact section hero image */
+.CONTACT-HERO-IMAGE{
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../Frontend/SUABI-contact-us-hero-16x9.jpg');
+    background-size: cover ;
+    background-position: center 78%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 10px;
+}
+/* Contact section hero text */
+.CONTACT-HERO-TEXT h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #c9d3f9;
+}
+/* Contact section heading */
+h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 24px;
+    color: #1d2f75;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+/* Contact section intro
+.CONTACT-INTRO{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #25335d;
+    /* background: #f0f0f0;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    /* border: 12px solid #7185d8; 
+} */
+
+/* Contact section container */
+.CONTACT-CONTAINER{
+    margin: 20px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #c9d3f9;
+    background: rgba(201, 199, 227, 0.16)
+}
+/* Form intro */
+.FORM-INTRO{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: italic;
+    color: #5a6bc7;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*------------------------------ */
+/*---- CONTACT FORM SECTION ---- */
+/*------------------------------ */
+
+/* Contact form styling */
+.CONTACT-ROW:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.CONTACT-COLUMN{
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+}
+.CONTACT-COLUMN label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.CONTACT-COLUMN img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*---------------------------- */
+/*---- FORM INPUT SECTION ---- */
+/*---------------------------- */
+/* Styling for form inputs, select, and textarea */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-top:8px;
+    margin-bottom: 12px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Styling for submit button */
+input[type=submit]{
+    background: #7e91da;
+    color:#c9d3f9;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+}
+/* Styling for submit button on hover */
+input[type=submit]:hover{
+    background: #5a6bc7;
+    color: #c9d3f9;
+}
+
+
+
+/*------------------------------ */
+/*------- FOOTER SECTION ------- */
+/*------------------------------ */
+
+/*For trademark position*/
+.FOOT-LOGO{
+    display: flex;
+    align-items: center;
+    background: #7e91da;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+/*Footer logo sizing*/
+.FOOT-LOGO img{
+    padding: 4px;
+    margin-top: 6px;
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+}
+/*Registered trademark symbol position and styling*/
+.FOOT-LOGO::after{
+    content: "\00AE"; /* Unicode for registered trademark symbol */
+    color: #1d2f75;
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-left: -2px;
+    margin-top: -12px;
+}
+.FOOT-BUSINESS-INFO {
+    display: block;
+    text-align: center;
+    background: #7e91da;
+    padding-left: 10px;
+    padding-top: 2px;
+    color:#c9d3f9;
+    font-size: 12px;
+}
+.FOOT-BUSINESS-INFO a{
+    color: inherit;
+    text-decoration: none;
+}
+.FOOT-BUSINESS-INFO a:hover{
+    color: #b2baf7;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+.FOOT-BUSINESS-INFO .bold{
+    font-weight: 600;
+}
+/*Footer paragraph styling*/
+.FOOT p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    /*background: linear-gradient(rgba(70, 77, 53, 0.4), #7e91da);*/
+    background: #7e91da;
+    color: #c9d3f9;
+    font-size: 12px;
+}
+
+/*------------------------------- */
+/*---- FOOTER SOCIAL SECTION ---- */
+/*------------------------------- */
+
+/*Footer social media icons styling*/
+.FOOT-SOCIAL{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7e91da;
+}
+.FOOT .fa{
+    padding: 6px;
+    margin: 0 2px;
+    font-size: 12x;
+    width: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20%;
+    color: #25335d;
+    background: whitesmoke;
+    opacity: 0.8;
+}
+.FOOT .fa:hover{
+    opacity: 1;
+}
+/*Footer social media icons styling*/
+.FOOT .fa-facebook{
+    background: #3b5998;
+    color: white;
+}
+.FOOT .fa-linkedin{
+    background: #0077b5;
+    color: white;
+}
+.FOOT .fa-instagram{
+    background: #e1306c;
+    color: white;
+}
+
+
+/*----------------------------------- */
+/*---- RESPONSIVE DESIGN SECTION ---- */
+/*----------------------------------- */
+
+/* Making the page responsive so that it 
+responds to different screen shapes and sizes */
+@media only screen and (max-width: 1274px){
+    /* Styling menu button */
+    .NAV-MENU-BUTTON{
+        display: flex;
+        color: #7185d8;
+        background: #25335d;
+        cursor: pointer;
+        transition: .3s;
+        z-index: 1002;
+        position: fixed;
+        right: 2px;
+        align-items: center; 
+        justify-content: center;
+    }
+    .NAV-MENU-BUTTON ul li{
+        margin: 2px;
+        padding: 20px 0;
+    }
+    /* Making menu responsive to shrinking pages */
+    .NAV-MENU.responsive{
+        top: 100px; 
+        max-height: 40vh;
+        opacity: 1;
+        visibility: visible;
+    }
+    /* Position and style of menu */
+    .NAV-MENU{
+        position: fixed;
+        top: 100px;
+        justify-content: center;
+        flex-direction: column; 
+        background: rgba(212, 213, 252, 0.6);
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(20px);
+        z-index: 1001;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        /* Animation */
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s;
+    
+    }
+    .NAV-MENU ul{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+   .NAV-MENU ul li {
+        width: 100%;
+        font-size: 20px;
+        display: block;
+        margin: 16px;
+    }
+
+    /* When link hovered over with mouse, underlined to let know engaged */
+    .link:hover, .active{
+        border-bottom: 4px solid #99b2fd ;
+    }
+
+    /* Scroll class for menu links */
+    .NAV.scrolled .NAV-MENU ul li {
+        margin:0px;
+    }
+    /* Scrolled class for menu position */
+    .NAV.scrolled .NAV-MENU {
+        top: 60px;
+    }
+    /* Scrolled class for menu button */
+    .NAV.scrolled .NAV-MENU-BUTTON{
+        align-items: center;
+        top: -12px;
+        padding: 4px;
+        width: 34px;
+        height: 34px;
+        background: #1d2f75;
+        z-index: 1002;
+    }
+    /* Scrolled class for menu button */
+    .NAV.scrolled .NAV-MENU-BUTTON .menuBar1, 
+    .NAV.scrolled .NAV-MENU-BUTTON .menuBar2, 
+    .NAV.scrolled .NAV-MENU-BUTTON .menuBar3{
+        width: 22px;
+        height: 2.5px;
+        background: #7e91da;
+        margin: 1.8px 0;
+        transition: 0.3s;
+        border-radius: 1.5px;
+    }
+    /* Scrolled class for menu animation*/
+    .NAV.scrolled .NAV-MENU-BUTTON.change .menuBar1{
+        transform: translate(-7px, 7px) rotate(-46deg);
+        background: #7e91da;
+        margin-left: 14px;
+        height: 3.5px;
+        width: 24px;
+    }
+    .NAV.scrolled .NAV-MENU-BUTTON.change .menuBar2{
+        opacity: 0;
+    }
+    .NAV.scrolled .NAV-MENU-BUTTON.change .menuBar3{
+        transform: translate(-7px, -7px) rotate(46deg);
+        background: #7e91da;
+        margin-left: 14px;
+        height: 3.5px;
+        width: 24px;
+    }
+    /* Changing color of menu button on hover */
+    .NAV.scrolled .NAV-MENU-BUTTON:hover{
+    background-color: #7185d8;
+    }
+    /* Changing color of menu bars on hover when*/
+    .NAV.scrolled .NAV-MENU-BUTTON:hover .menuBar1, 
+    .NAV.scrolled .NAV-MENU-BUTTON:hover .menuBar2, 
+    .NAV.scrolled .NAV-MENU-BUTTON:hover .menuBar3{
+    background-color: #25335d;
+    }
+    .CONTACT-COLUMN, input{
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    /* Chanign size of hero image */
+    .CONTACT-HERO-IMAGE{
+        height: 40vh;
+    }
+}

@@ -1,0 +1,153 @@
+<!-- Stating we're using html-->
+<!DOCTYPE html> 
+<html lang="en">  
+<head>              
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-about-us-v.1.css">
+
+<!-- Declaring the title of the web page-->
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="../Frontend/suabi-favicon.png">
+
+</head>
+
+<!-- What's going on in the body of the page-->
+<body>
+    <div class="WRAPPER">
+        <nav class="NAV" id="navbar">
+            <div class="NAV-LOGO" id="logo">
+                <a href="homepage-v.1.html">
+                <img src="../Frontend/Suabi trademark-transparent-cropped.png" alt="Company Trademark Logo"/>
+                </a>
+            </div>  
+            <!-- Menu option for different pages-->
+            <div class="NAV-MENU" id="NAVMENU">
+                <ul>
+                    <li><a href="homepage-v.1.html" class="link">Home</a></li>
+                    <li><a href="services-v.1.html" class="link">Services</a></li>
+                    <li><a href="about-us-v.1.html" class="link active">About Us</a></li>
+                    <li><a href="contact-us-v.1.html" class="link">Contact Us</a></li>
+            
+
+                </ul>
+            </div>
+
+            
+             <!-- Creating button hamburger menu button -->
+                    <div class="NAV-MENU-BUTTON" id="menuButton" onclick="menuFunction()"> 
+                        <div class="menuBar1"></div>
+                        <div class="menuBar2"></div>
+                        <div class="menuBar3"></div>
+                    </div>    
+        </nav>
+    </div>
+
+    <!-- Main content of the page -->
+
+        <!-- About Page Hero -->
+        <div class="ABOUT-HERO-IMAGE"> 
+                <div class="ABOUT-HERO-TEXT">
+                    <h1>About Us</h1>
+                </div>
+        </div>
+
+        <div class="ABOUT-CONTAINER">
+        <!-- About Us Section -->
+            <section class="ABOUT-SEC">
+        <!-- About Us Intro -->
+                <p class="ABOUT-INTRO"> You can trust us to deliver the best results for your business. 
+                </p>
+                <!-- Our Story Content -->
+                <section class="OUR-STORY-SEC">
+                    <h3 class="STORY-TITLE">Our Story</h3>
+                        <p class="STORY-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>    
+                </section>
+                <!-- Our Founder Content -->
+                <section class="OUR-FOUNDER-SEC">
+                    <h3 class="FOUNDER-TITLE">Our Founder</h3>
+                        <p class="FOUNDER-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>    
+                </section>
+                <!-- Our Mission Content -->
+                <section class="OUR-MISSION-SEC">
+                    <h3 class="MISSION-TITLE">Our Mission</h3>
+                        <p class="MISSION-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>    
+                </section>
+                <!-- Our Vision Content -->
+                <section class="OUR-VISION-SEC">
+                    <h3 class="VISION-TITLE">Our Vision</h3>
+                        <p class="VISION-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>    
+                </section>
+                <!-- Our Values Content -->
+                <section class="OUR-VALUES-SEC">
+                    <h3 class="VALUES-TITLE">Our Values</h3>
+                        <p class="VALUES-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolor fugit et animi ab quod fugiat voluptatum, modi minus cumque temporibus consequuntur autem corporis quos velit iusto harum incidunt unde!</p>
+                </section>
+            </section>
+        </div> 
+
+        <!-- Footer -->
+        <footer class="FOOT" >
+            <div class="FOOT-LOGO">
+                <img src="../Frontend/Suabi trademark-transparent-cropped.png" alt="Company Trademark Logo"/>
+            </div>
+            <address class="FOOT-BUSINESS-INFO">
+                <span class="bold">Email us at:</span><a href="mailto:example@example.com" class="suabiEmail"> example@example.com</a><br>
+                <span class="bold">Call us at:</span> <a href="tel:+1234567890" class="suabiPhone"> (123) 456-7890 </a><br>
+                <span class="bold">Visit us at:</span> 185 Main Street, Anytown, USA 12345<br>
+            </address>
+            <p>Follow us on social media!</p>
+            <div class="FOOT-SOCIAL">
+                <a href="https://www.facebook.com/people/Suabiccc-LLC/61589513567706/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/ananta-bista-8b4021183" class="fa fa-linkedin" target="_blank"></a>
+                <a href="#" class="fa fa-instagram" target="_blank"></a>
+            </div>
+            <p>&copy; 2026 Suabiccc, LLC. All rights reserved.</p>
+        </footer>
+
+    <!-- Javascript -->
+     
+        <!-- Making menu functional and responsive (using javascript)-->
+        <script>
+            // Toggle the responsive class on the navigation menu
+            function menuFunction(navMenu, menuButton){
+                var navMenu = document.getElementById("NAVMENU");
+                var menuButton = document.getElementById("menuButton");
+
+                /// Toggle the responsive class on the navigation menu
+                if(navMenu.className === "NAV-MENU"){
+                        navMenu.className += " responsive";
+                }else{
+                        navMenu.className = "NAV-MENU";
+                }
+                // Toggle the change class on the menu button to animate menu bars
+                menuButton.classList.toggle("change");
+            }
+
+            // When the user scrolls down 40px from the top of the document, hide the navbar
+            window.addEventListener('scroll', function() {
+                var navbar = document.getElementById("navbar");
+                var menuButton = document.getElementById("menuButton");
+
+                if(window.scrollY > 40){
+                    navbar.classList.add("scrolled");
+                    menuButton.classList.add("scrolled");
+                }else{
+                    navbar.classList.remove("scrolled");
+                    menuButton.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+</body>
+</html>

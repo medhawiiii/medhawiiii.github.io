@@ -1,0 +1,302 @@
+<!-- Stating we're using html-->
+<!DOCTYPE html> 
+<html lang="en">  
+<head>              
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Boxicons Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-home-v.1.css">
+
+<!-- Declaring the title of the web page-->
+    <title>Suabi</title>
+    <link rel="icon" type="image/x-icon" href="../Frontend/suabi-favicon.png">
+</head>
+
+    <!-- What's going on in the body of the page-->
+    <body>
+        <div class="WRAPPER">
+            <nav class="NAV" id="navbar">
+                <div class="NAV-LOGO" id="logo">
+                    <a href="homepage-v.1.html">
+                    <img src="../Frontend/Suabi trademark-transparent-cropped.png" alt="Company Trademark Logo"/>
+                    </a>
+                </div>  
+                <!-- Menu option for different pages-->
+                <div class="NAV-MENU" id="NAVMENU">
+                    <ul>
+                        <li><a href="homepage-v.1.html" class="link active">Home</a></li>
+                        <li><a href="services-v.1.html" class="link">Services</a></li>
+                        <li><a href="about-us-v.1.html" class="link">About Us</a></li>
+                        <li><a href="contact-us-v.1.html" class="link">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Creating button hamburger menu button -->
+                    <div class="NAV-MENU-BUTTON" id="menuButton" onclick="menuFunction()"> 
+                        <div class="menuBar1"></div>
+                        <div class="menuBar2"></div>
+                        <div class="menuBar3"></div>
+                    </div>    
+            </nav>
+        </div>
+
+        <!-- Main content of the page -->
+
+        <!-- Header Photo Carousel -->
+        <section class="CAROUSEL">
+            <img class="IMG-CAROUSEL" id="IMG-1" src="../Frontend/re-colored-logo-3x2.png" style="width:100%;" style = "height:100%;" alt="Photo Carousel 1"/>
+            <img class="IMG-CAROUSEL" id="IMG-2" src="../Frontend/your-book-keeping-partner-3x2.png" style="width:100%;" style = "height:100%;" alt="Photo Carousel 2"/>
+            <img class="IMG-CAROUSEL" id="IMG-3" src="../Frontend/quickbooks-certification-3x2.png" style="width:100%;" style = "height:100%;"alt="Photo Carousel 3"/>
+        </section>
+
+         <!-- Section 1-->
+        <div class="HOME-CONTAINER">
+            
+        <!-- Homepage Content -->
+        <p class="HOME-INTRO">
+            Your success is our satisfaction.
+        </p>
+                <!-- Reverse the order of columns on smaller screens -->
+                <div class="HOME-ROW reverse-order">
+                    <!-- Image Column -->
+                    <div class="HOME-COLUMN-2 slide-in from-left">
+                        <img src="../Frontend/SUABI-homepage-pic-3-16x9.jpg" 
+                        alt="Company Image" width="80%"/>
+                    </div>
+                    <!-- Text Column -->
+                    <div class="HOME-COLUMN-1 slide-in from-right">
+                        <h2 class="COLUMN-HEADER">Section 1</h2>
+                        <p><span>
+                            Your one stop for all your bookkeeping needs. 
+                            We'll take care of the hassle 
+                            so you can focus on your business.
+                        </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Section 2-->
+        <div class="HOME-CONTAINER">
+            <div class="HOME-ROW">
+            <!-- Reverse the order of columns on smaller screens -->
+                <div class="HOME-ROW reverse-order">
+                <!-- Text Column -->
+                <div class="HOME-COLUMN-1 slide-in from-right">
+                    <h2 class="COLUMN-HEADER">Section 2</h2>
+                    <p><span>
+                        What we bring to the table:
+                    </span></p>
+                </div>
+                <!-- Why Trust Us Column -->
+                <div class="HOME-COLUMN-2 slide-in from-left">
+                 <!-- Why our clients can trust us -->
+                    <div class="WHY-TRUST-GRID">
+                            <div class="WHY-TRUST-SMALL-CARD">
+                                <i class="bx bx-medal-star"></i> 
+                                    <h4>Credited</h4>
+                                    <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="WHY-TRUST-SMALL-CARD">
+                                <i class="bx bx-check-shield"></i>
+                                    <h4>Certified</h4>
+                                    <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="WHY-TRUST-SMALL-CARD">
+                                <i class="bx bx-heart FEATURE-ICON"></i>
+                                    <h4>Dedicated</h4>
+                                        <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="WHY-TRUST-SMALL-CARD">
+                                <i class="bx bx-enterprise"></i>
+                                    <h4>Focused</h4>
+                                    <p class="WHY-TRUST-CONTENT">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section 3-->
+        <div class="HOME-CONTAINER">
+            <div class="HOME-ROW">
+                <!-- Reverse the order of columns on smaller screens -->
+                <div class="HOME-ROW reverse-order">
+                    <!-- Image Column -->
+                    <div class="HOME-COLUMN-2 slide-in from-left">
+                        <img src="../Frontend/SUABI-homepage-pic-3-16x9.jpg" 
+                        alt="Company Image" width="80%"/>
+                    </div>
+                    <!-- Text Column -->
+                    <div class="HOME-COLUMN-1 slide-in from-right">
+                        <h2 class="COLUMN-HEADER">Section 3</h2>
+                        <p><span>
+                            Take the next step with us! Send us a message, give us a call, 
+                            or schedule a meeting with our team.
+                        </span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="FOOT" >
+            <div class="FOOT-LOGO">
+                <img src="../Frontend/Suabi trademark-transparent-cropped.png" alt="Company Trademark Logo"/>
+            </div>
+            <address class="FOOT-BUSINESS-INFO">
+                <span class="bold">Email us at:</span><a href="mailto:example@example.com" class="suabiEmail"> example@example.com</a><br>
+                <span class="bold">Call us at:</span> <a href="tel:+1234567890" class="suabiPhone"> (123) 456-7890 </a><br>
+                <span class="bold">Visit us at:</span> 185 Main Street, Anytown, USA 12345<br>
+            </address>
+            <p>Follow us on social media!</p>
+            <div class="FOOT-SOCIAL">
+                <a href="https://www.facebook.com/people/Suabiccc-LLC/61589513567706/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/ananta-bista-8b4021183" class="fa fa-linkedin" target="_blank"></a>
+                <a href="#" class="fa fa-instagram" target="_blank"></a>
+            </div>
+            <p>&copy; 2026 Suabiccc, LLC. All rights reserved.</p>
+        </footer>
+
+        
+<!-- JavaScript -->
+
+        <!-- Making menu functional and responsive (using javascript)-->
+        <script>
+            // Toggle the responsive class on the navigation menu
+            function menuFunction(navMenu, menuButton){
+                var navMenu = document.getElementById("NAVMENU");
+                var menuButton = document.getElementById("menuButton");
+
+                /// Toggle the responsive class on the navigation menu
+                if(navMenu.className === "NAV-MENU"){
+                        navMenu.className += " responsive";
+                }else{
+                        navMenu.className = "NAV-MENU";
+                }
+                // Toggle the change class on the menu button to animate menu bars
+                menuButton.classList.toggle("change");
+            }
+
+            // When the user scrolls down 40px from the top of the document, hide the navbar
+            window.addEventListener('scroll', function() {
+                var navbar = document.getElementById("navbar");
+                var menuButton = document.getElementById("menuButton");
+
+                if(window.scrollY > 40){
+                    navbar.classList.add("scrolled");
+                    menuButton.classList.add("scrolled");
+                }else{
+                    navbar.classList.remove("scrolled");
+                    menuButton.classList.remove("scrolled");
+                }
+            });
+        </script>
+
+        <!-- Making carousel functional by automatically cycling through the image (using javascript)-->
+        <script>
+            // declaring the carousel index
+            var carouselIndex = 0;
+            imageCarousel();
+
+            function imageCarousel(){
+
+                // declaring values for carousel index and images
+                var c;
+                var t;
+
+                // getting all the images in the carousel
+                t = document.getElementsByClassName("IMG-CAROUSEL");
+                for (c = 0; c < t.length; c++) {
+                    t[c].style.display = "none";
+                }
+                carouselIndex++;
+                if (carouselIndex > t.length) {carouselIndex = 1}
+                t[carouselIndex-1].style.display = "block";
+                setTimeout(imageCarousel, 3000);
+            }
+        </script>
+
+        <!-- Making slide-in function functional -->
+        <script>
+            // Creating listener
+            document.addEventListener("DOMContentLoaded", function() {
+                // creating observer for slide-in animation
+                const observerOptions = {
+                    // states to use the viewport
+                    root: null,
+                    rootMargin: '0px',
+                    // tells to trigger when element is 60% in view
+                    threshold: 0.60,
+                };
+                    
+                // initializing new intersection observer to trigger slide-in animation 
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        // checks if element is intersecting (is in view)
+                        if (entry.isIntersecting) {
+                            // adding visible class to trigger CSS
+                            entry.target.classList.add("visible");
+                            // stoping observing once animated
+                               // to improve performance
+                            observer.unobserve(entry.target);
+                            }
+                    });
+                }, observerOptions);
+
+                // initilzing to select all elements with the "slide-in" class 
+                const elements = document.querySelectorAll('.slide-in');
+                    elements.forEach(element => {
+                        observer.observe(element);
+                    });
+                });
+
+                // For smoother transition when resizing window
+                const transitionSheet = document.createElement('style');
+                
+                // stating that there should be no slide-in animation
+                transitionSheet.innerText = `
+                    .slide-in.no-transition {
+                        transition: none !important;
+                    }
+                `;
+                document.head.appendChild(transitionSheet);
+
+            // delaying animation action until after window has resized 
+            let resizeTimer;
+                
+            // initilzing to select all elements with the "slide-in" class 
+            const slidInElements = document.querySelectorAll('.slide-in');
+
+            window.addEventListener('resize', function() {
+                // disables transition to prevent the slide-in animation
+                slidInElements.forEach(element => {
+                    element.classList.add('no-transition');
+                });
+                    
+                // resets/clears resize timer
+                clearTimeout(resizeTimer);
+                
+                // once resizing is finished, re-enables transition for animation
+                resizeTimer = setTimeout(function() {
+                    const elements = document.querySelectorAll('.slide-in');
+                        elements.forEach(element => {
+                            element.classList.remove('no-transition');
+                        });
+                    }, 100);
+                });
+        </script>  
+    </body>
+</html>
